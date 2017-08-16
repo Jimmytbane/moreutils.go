@@ -11,16 +11,23 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
+
 package main
 
 import "fmt"
-import "strings"
 
 func main() {
-	var input string
-	fmt.Println("---DOWNCASETHIS---")
-	fmt.Printf("Input a string you would like to downcase -->  ")
-	fmt.Scanf("%s", &input)
-	fmt.Printf("Your downcased string is -->  ")
-	fmt.Printf(strings.ToLower(input))
+	var my_result string
+	fmt.Println("---INTERJECT---")
+	fmt.Println("What's the number one server OS in the world?")
+	fmt.Printf("-->  ")
+	fmt.Scanln(&my_result)
+
+	if (my_result == "linux") {
+		fmt.Printf("I'd like to interject for a moment--\nwhat you've referred to as a %s is in fact, GNU/%s \nor, as I've recently taken to calling it, GNU plus %s", my_result, my_result, my_result)
+	} else if (my_result == "gnu/linux" || my_result == "gnu plus linux" || my_result == "gnu + linux" || my_result == "lignux") {
+		fmt.Println("That's right!")
+	} else {
+		fmt.Printf("%s is not the number on server OS in the world...", my_result)
+	}
 }
