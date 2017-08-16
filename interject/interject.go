@@ -15,6 +15,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 package main
 
 import "fmt"
+import "strings"
 
 func main() {
 	var my_result string
@@ -22,9 +23,10 @@ func main() {
 	fmt.Println("What's the number one server OS in the world?")
 	fmt.Printf("-->  ")
 	fmt.Scanln(&my_result)
+	my_result = strings.ToLower(my_result)
 
 	if (my_result == "linux") {
-		fmt.Printf("I'd like to interject for a moment--\nwhat you've referred to as a %s is in fact, GNU/%s \nor, as I've recently taken to calling it, GNU plus %s", my_result, my_result, my_result)
+		fmt.Printf("I'd like to interject for a moment--\nwhat you've referred to as a %s is in fact, GNU/%s \nor, as I've recently taken to calling it, GNU + %s", my_result, my_result, my_result)
 	} else if (my_result == "gnu/linux" || my_result == "gnu plus linux" || my_result == "gnu + linux" || my_result == "lignux") {
 		fmt.Println("That's right!")
 	} else {
