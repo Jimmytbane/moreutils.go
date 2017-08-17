@@ -20,13 +20,13 @@ import "fmt"
 
 func main() {
 	var username string
-	var ip_or_domain string
+	var ipOrDomain string
 
 	fmt.Println("---SSHME---")
 	fmt.Println("What username@server do you want to login to?")
 	fmt.Printf("Put a server ip or domain here -->  ")
-	fmt.Scanf("%s", &ip_or_domain)
+	fmt.Scanf("%s", &ipOrDomain)
 	fmt.Printf("Put a username here -->  ")
 	fmt.Scanf("%s", &username)
-	fmt.Printf("About to run ssh %s@%s", username, ip_or_domain)
+	fmt.Printf("About to run ssh %s@%s", username, ipOrDomain)
 }
