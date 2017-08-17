@@ -23,5 +23,5 @@ func main() {
 		fmt.Println(err.Error())
 	}
 
-	fmt.Println(string(stdout))
+	fmt.Printf("Your Linux entropy is -->  %s", string(stdout))
 }
