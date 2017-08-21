@@ -15,8 +15,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 package main
 
 import "fmt"
-
-// import "os/exec"
+import "os/exec"
 
 func main() {
 	var username string
@@ -28,5 +27,10 @@ func main() {
 	fmt.Scanf("%s", &ipOrDomain)
 	fmt.Printf("Put a username here -->  ")
 	fmt.Scanf("%s", &username)
-	fmt.Printf("About to run ssh %s@%s", username, ipOrDomain)
+	fmt.Printf("\nAbout to run ssh %s@%s\n", username, ipOrDomain)
+	stdout, err := exec.Command("ssh", "%s@%s", username, ipOrDomain).Output()
+	if err != nil {
+		fmt.Println(err.Error())
+	}
+	fmt.Println(string(stdout))
 }
