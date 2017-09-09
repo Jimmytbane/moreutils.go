@@ -19,8 +19,8 @@ import "runtime"
 
 func main() {
 	if (runtime.GOOS == "linux") {
-		runtime.GOOS == "GNU/Linux"
-		fmt.Printf("%s on %s\n", runtime.Version, runtime.GOOS);
-	}
+		fmt.Printf("%s on GNU/Linux\n", runtime.Version());
+	} else {
 		fmt.Printf("%s on %s\n", runtime.Version(), runtime.GOOS);
+	}
 }
