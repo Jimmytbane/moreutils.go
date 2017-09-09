@@ -1,0 +1,16 @@
+*
+!*.go
+!.gitignore
+!whatami/*.go
+!ipv/*.go
+!ipv4/*.go
+!ipv6/*.go
+!ntkernelbestkernel/*.go
+!sshme/*.go
+!whatami/*.go
+!README.md/*.go
+!LICENSE/*.go
+!linuxentropy/*.go
+!hello/*.go
+!downcasethis/*.go
+
