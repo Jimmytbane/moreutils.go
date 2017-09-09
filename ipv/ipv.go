@@ -17,8 +17,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("---IPV---")
-	fmt.Println("ipv usage is easy,")
-	fmt.Println("type ipv4 or ipv6 in your console")
-	fmt.Println("simple as that")
+	fmt.Println("---IPV---");
+	fmt.Println("ipv usage is easy,");
+	fmt.Println("type ipv4 or ipv6 in your console, simple as that");
 }

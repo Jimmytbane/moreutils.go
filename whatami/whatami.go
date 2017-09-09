@@ -18,5 +18,9 @@ import "fmt"
 import "runtime"
 
 func main() {
-	fmt.Printf("%s on %s", runtime.Version(), runtime.GOOS)
+	if (runtime.GOOS == "linux") {
+		runtime.GOOS == "GNU/Linux";
+		fmt.Printf(
+	}
+		fmt.Printf("%s on %s\n", runtime.Version(), runtime.GOOS);
 }

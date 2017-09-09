@@ -26,10 +26,10 @@ func main() {
 	my_result = strings.ToLower(my_result)
 
 	if (my_result == "linux") {
-		fmt.Printf("I'd like to interject for a moment--\nwhat you've referred to as a %s is in fact, GNU/%s \nor, as I've recently taken to calling it, GNU + %s", my_result, my_result, my_result)
+		fmt.Printf("I'd like to interject for a moment--\nwhat you've referred to as a %s is in fact, GNU/%s \nor, as I've recently taken to calling it, GNU + %s\n", my_result, my_result, my_result)
 	} else if (my_result == "gnu/linux" || my_result == "gnu plus linux" || my_result == "gnu + linux" || my_result == "lignux") {
 		fmt.Println("That's right!")
 	} else {
-		fmt.Printf("%s is not the number on server OS in the world...", my_result)
+		fmt.Printf("%s is not the number on server OS in the world...\n", my_result)
 	}
 }
