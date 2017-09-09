@@ -1,5 +1,7 @@
 *
 !*.go
+!interject/*.go
+!hello/*.go
 !.gitignore
 !whatami/*.go
 !ipv/*.go
@@ -13,4 +15,3 @@
 !linuxentropy/*.go
 !hello/*.go
 !downcasethis/*.go
-
