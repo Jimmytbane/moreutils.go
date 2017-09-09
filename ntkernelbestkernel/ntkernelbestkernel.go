@@ -18,19 +18,19 @@ import "fmt"
 import "strings"
 
 func main() {
-	var input string;
-	var truth string;
-	fmt.Println("---NTKERNELBESTKERNEL---");
-	fmt.Println("What is the best kernel of all time?");
-	fmt.Printf("Input your response -->  ");
-	fmt.Scanf("%s", &input);
-	input = strings.ToLower(input);
+	var input string
+	var truth string
+	fmt.Println("---NTKERNELBESTKERNEL---")
+	fmt.Println("What is the best kernel of all time?")
+	fmt.Printf("Input your response -->  ")
+	fmt.Scanf("%s", &input)
+	input = strings.ToLower(input)
 
-	truth = "NT KERNEL BEST KERNEL\n,";
+	truth = "NT KERNEL BEST KERNEL\n,"
 
-	if (input == "nt" || input == "nt kernel") {
-		fmt.Println(truth);
+	if input == "nt" || input == "nt kernel" {
+		fmt.Println(truth)
 	} else {
-		fmt.Printf("What are you talking about? %s", truth);
+		fmt.Printf("What are you talking about? %s", truth)
 	}
 }
