@@ -18,18 +18,18 @@ import "fmt"
 import "strings"
 
 func main() {
-	var my_result string
+	var myResult string
 	fmt.Println("---INTERJECT---")
 	fmt.Println("What's the number one server OS in the world?")
 	fmt.Printf("-->  ")
-	fmt.Scanln(&my_result)
-	my_result = strings.ToLower(my_result)
+	fmt.Scanln(&myResult)
+	myResult = strings.ToLower(myResult)
 
-	if my_result == "linux" {
-		fmt.Printf("I'd like to interject for a moment--\nwhat you've referred to as a %s is in fact, GNU/%s \nor, as I've recently taken to calling it, GNU + %s\n", my_result, my_result, my_result)
-	} else if my_result == "gnu/linux" || my_result == "gnu plus linux" || my_result == "gnu + linux" || my_result == "lignux" {
+	if myResult == "linux" {
+		fmt.Printf("I'd like to interject for a moment--\nwhat you've referred to as a %s is in fact, GNU/%s \nor, as I've recently taken to calling it, GNU + %s\n", myResult, myResult, myResult)
+	} else if myResult == "gnu/linux" || myResult == "gnu plus linux" || myResult == "gnu + linux" || myResult == "lignux" {
 		fmt.Println("That's right!")
 	} else {
-		fmt.Printf("%s is not the number on server OS in the world...\n", my_result)
+		fmt.Printf("%s is not the number on server OS in the world...\n", myResult)
 	}
 }
