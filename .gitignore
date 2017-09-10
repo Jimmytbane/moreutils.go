@@ -1,7 +1,6 @@
 *
 !*.go
 !interject/*.go
-!hello/*.go
 !.gitignore
 !whatami/*.go
 !ipv/*.go
@@ -9,7 +8,6 @@
 !ipv6/*.go
 !ntkernelbestkernel/*.go
 !sshme/*.go
-!whatami/*.go
 !README.md/*.go
 !LICENSE/*.go
 !linuxentropy/*.go
