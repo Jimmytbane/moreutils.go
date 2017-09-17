@@ -57,7 +57,6 @@ func downcasethis() {
 
 func interject() {
 	var myResult string
-	fmt.Println("---INTERJECT---")
 	fmt.Println("What's the number one server OS in the world?")
 	fmt.Printf("-->  ")
 	fmt.Scanln(&myResult)
@@ -73,7 +72,6 @@ func interject() {
 }
 
 func ipv() {
-	fmt.Println("---IPV---")
 	fmt.Println("ipv usage is easy,")
 	fmt.Println("type ipv4 or ipv6 in your console, simple as that")
 }
@@ -106,9 +104,9 @@ func main() {
   } else if (command == "hello") {
     hello()
   }
-  fmt.Printf("Would you like to run another command?\n-->  ")
+  fmt.Printf("Would you like to run another command?(command/n)\n-->  ")
   fmt.Scanf("%s\n", &another)
-  if (another == "n") {
+  if (another == "n" || another == "no") {
     os.Exit(0)
   } else if (another == "whatami") {
     whatami()
