@@ -19,7 +19,6 @@ import "strings"
 
 func main() {
 	var input string
-	fmt.Println("---DOWNCASETHIS---")
 	fmt.Printf("Input a string you would like to downcase -->  ")
 	fmt.Scanf("%s", &input)
 	// shortened from 2 -> 1 lines, thanks to @Strum355

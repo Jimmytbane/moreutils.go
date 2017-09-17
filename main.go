@@ -18,6 +18,8 @@ import(
   "strings"
   "fmt"
   "runtime"
+  "os"
+  "os/exec"
 )
 
 func whatami() {
@@ -47,7 +49,6 @@ func hello() {
 
 func downcasethis() {
 	var input string
-	fmt.Println("---DOWNCASETHIS---")
 	fmt.Printf("Input a string you would like to downcase -->  ")
 	fmt.Scanf("%s", &input)
 	// shortened from 2 -> 1 lines, thanks to @Strum355
@@ -88,6 +89,7 @@ func linuxentropy() {
 
 
 func main() {
+  var another string
   var command string
   fmt.Printf("What command do you want to run?\n-->  ")
   fmt.Scanf("%s\n", &command)
@@ -95,5 +97,30 @@ func main() {
     whatami()
   } else if (command == "ntkernelbestkernel") {
     ntkernelbestkernel()
+  } else if (command == "ipv") {
+    ipv()
+  } else if (command == "interject") {
+    interject()
+  } else if (command == "downcasethis") {
+    downcasethis()
+  } else if (command == "hello") {
+    hello()
+  }
+  fmt.Printf("Would you like to run another command?\n-->  ")
+  fmt.Scanf("%s\n", &another)
+  if (another == "n") {
+    os.Exit(0)
+  } else if (another == "whatami") {
+    whatami()
+  } else if (another == "ntkernelbestkernel") {
+    ntkernelbestkernel()
+  } else if (another == "ipv") {
+    ipv()
+  } else if (another == "interject") {
+    interject()
+  } else if (another == "downcasethis") {
+    downcasethis()
+  } else if (another == "hello") {
+    hello()
   }
 }
