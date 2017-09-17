@@ -1,5 +1,5 @@
 /*
-Copyright © 2017  <jmfgdev@outlook.com>
+Copyright © 2017  jmfgdev
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
 by the Free Software Foundation, either version 3 of the License, or
@@ -18,9 +18,5 @@ import "fmt"
 import "runtime"
 
 func main() {
-	if runtime.GOOS == "linux" {
-		fmt.Printf("%s on GNU/Linux\n", runtime.Version())
-	} else {
 		fmt.Printf("%s on %s\n", runtime.Version(), runtime.GOOS)
-	}
 }

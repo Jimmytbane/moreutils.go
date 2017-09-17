@@ -1,5 +1,5 @@
 /*
-Copyright © 2017  <jmfgdev@outlook.com>
+Copyright © 2017  jmfgdev
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
 by the Free Software Foundation, either version 3 of the License, or
@@ -20,7 +20,6 @@ import "os/exec"
 func main() {
 	var username string
 	var ipOrDomain string
-
 	fmt.Println("---SSHME---")
 	fmt.Println("What username@server do you want to login to?")
 	fmt.Printf("Put a server ip or domain here -->  ")
