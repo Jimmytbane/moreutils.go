@@ -90,7 +90,9 @@ func main() {
     interject()
   } else if (command == "downcasethis") {
     downcasethis()
-    }
+  } else if (command == "linuxentropy") {
+    linuxentropy()
+  }
   fmt.Printf("Would you like to run another command?(command/n)\n-->  ")
   fmt.Scanf("%s\n", &another)
   if (another == "n" || another == "no") {
@@ -103,5 +105,7 @@ func main() {
     interject()
   } else if (another == "downcasethis") {
     downcasethis()
-    }
+  } else if (another == "linuxentropy") {
+    linuxentropy()
+  }
 }
