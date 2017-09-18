@@ -57,8 +57,7 @@ func downcasethis() {
 
 func interject() {
 	var myResult string
-	fmt.Println("What's the number one server OS in the world?")
-	fmt.Printf("-->  ")
+	fmt.Printf("What's the number one server OS in the world?\n-->  ")
 	fmt.Scanln(&myResult)
 	myResult = strings.ToLower(myResult)
 
@@ -69,11 +68,6 @@ func interject() {
 	} else {
 		fmt.Printf("%s is not the number on server OS in the world...\n", myResult)
 	}
-}
-
-func ipv() {
-	fmt.Println("ipv usage is easy,")
-	fmt.Println("type ipv4 or ipv6 in your console, simple as that")
 }
 
 func linuxentropy() {
