@@ -43,10 +43,6 @@ func ntkernelbestkernel() {
 	}
 }
 
-func hello() {
-	fmt.Println("Hello, world")
-}
-
 func downcasethis() {
 	var input string
 	fmt.Printf("Input a string you would like to downcase -->  ")
@@ -89,15 +85,11 @@ func main() {
     whatami()
   } else if (command == "ntkernelbestkernel") {
     ntkernelbestkernel()
-  } else if (command == "ipv") {
-    ipv()
   } else if (command == "interject") {
     interject()
   } else if (command == "downcasethis") {
     downcasethis()
-  } else if (command == "hello") {
-    hello()
-  }
+    }
   fmt.Printf("Would you like to run another command?(command/n)\n-->  ")
   fmt.Scanf("%s\n", &another)
   if (another == "n" || another == "no") {
@@ -106,13 +98,9 @@ func main() {
     whatami()
   } else if (another == "ntkernelbestkernel") {
     ntkernelbestkernel()
-  } else if (another == "ipv") {
-    ipv()
   } else if (another == "interject") {
     interject()
   } else if (another == "downcasethis") {
     downcasethis()
-  } else if (another == "hello") {
-    hello()
-  }
+    }
 }
