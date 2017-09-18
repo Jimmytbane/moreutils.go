@@ -45,10 +45,11 @@ func ntkernelbestkernel() {
 
 func downcasethis() {
 	var input string
+	var ignore string
 	fmt.Printf("Input a string you would like to downcase -->  ")
 	fmt.Scanf("%s", &input)
-	// shortened from 2 -> 1 lines, thanks to @Strum355
 	fmt.Println("Your downcased string is --> " + strings.ToLower(input))
+	fmt.Scanf("%s", &ignore)
 }
 
 func interject() {
